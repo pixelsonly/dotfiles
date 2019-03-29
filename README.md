@@ -3,9 +3,9 @@
   - `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 - [Apple Developer Tools](https://developer.apple.com)
   - `$ xcode-select --install`
-- Any dot file in this dir will be loaded `~/.secrets`
+- Any dotfile in this dir will be loaded `~/.secrets`
 
 # Installation
-- Run `$ ./homebrew.sh`
-- Run `$ ./homebrew-cask.sh`
-- Run `$ ./create-symlinks.sh`
+1. Run `$ ./homebrew.sh`
+2. Run `$ ./homebrew-cask.sh`
+3. Run `$ ./create-symlinks.sh`
