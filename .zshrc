@@ -23,9 +23,9 @@ POWERLEVEL9K_MODE="nerdfont-complete"
 POWERLEVEL9K_COLOR_SCHEME="dark"
 POWERLEVEL9K_PROMPT_ON_NEWLINE=false
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(root_indicator context dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status rbenv nvm)
-POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND="000"
+POWERLEVEL9K_PROPMT_ADD_NEWLINE_COUNT=1
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir dir_writable vcs rbenv nvm)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status)
 
 zplug load
 
@@ -54,9 +54,10 @@ alias src="source ~/.zshrc"
 alias cfg="nano ~/.zshrc"
 alias l="ls -lah"
 alias flushdns="dscacheutil -flushcache; sudo killall -HUP mDNSResponder;"
+alias cleands="find . -name '.DS_Store' -type f -delete"
 
 ################################################################################
-# helpers
+# functions
 ################################################################################
 corscheck() {
   curl -I -s -X GET -H "Origin: $1" $2
