@@ -55,6 +55,7 @@ alias cfg="nano ~/.zshrc"
 alias l="ls -lah"
 alias flushdns="dscacheutil -flushcache; sudo killall -HUP mDNSResponder;"
 alias cleands="find . -name '.DS_Store' -type f -delete"
+alias gh="open \`git remote -v | grep git@github.com | grep fetch | head -1 | cut -f2 | cut -d' ' -f1 | sed -e's/:/\//' -e 's/git@/http:\/\//'\`"
 
 ################################################################################
 # functions
